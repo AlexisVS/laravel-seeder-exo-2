@@ -24,7 +24,7 @@
                         <td>{{ $compagnie->mail }}</td>
                         <td>{{ $compagnie->contactFirstName }}</td>
                         <td>{{ $compagnie->contactLastName }}</td>
-                        <td>{{ $compagnie->imgCompany }}</td>
+                        <td><img src="{{ asset("img/" . $compagnie->imgCompany) }}" alt=""></td>
                         <td class="d-flex">
                             <a href="/compagnie/{{ $compagnie->id }}" class="btn btn-success text-white">SHOW</a>
                             <a href="/compagnie/{{ $compagnie->id }}/edit" class="btn btn-primary text-white mx-3">Editer</a>
